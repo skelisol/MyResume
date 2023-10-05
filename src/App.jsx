@@ -19,11 +19,13 @@ function App() {
           <li>Contact</li>
         </ul>
       </div>
-      <header>
-        <h3>Hi, I'm</h3>        
-        <h1>JARVIS TAYLOR</h1>
-        <h2>Front End Web Developer</h2>
-      </header>
+      <body>
+        <header>
+          <h3>Hi, I'm</h3>        
+          <h1>JARVIS TAYLOR</h1>
+          <h2>Front End Web Developer</h2>
+        </header>
+      </body>
       
     </>
   )
