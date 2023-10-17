@@ -6,7 +6,7 @@ import Hero from './Hero'
 
 function App() {
   // const [count, setCount] = useState(0)
-  const logoImg = './src/assets/J.svg'
+  const logoImg = './assets/J.svg'
   return (
     <div>
       <body>
