@@ -19,7 +19,8 @@ function App() {
           <a href='#' className='hyperlink'>Contact</a>        
         </div>
         <div className='navlogo'>
-          <img src ='./src/assets/J.svg' className='logo'alt='Logo'></img>
+          {/* <img src='./src/assets/J.svg' className='logo'alt='Logo'></img> */}
+          <a href='./' className='logo' alt='Logo'></a>
         </div> 
        
       </body>
