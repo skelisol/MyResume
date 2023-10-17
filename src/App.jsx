@@ -2,32 +2,29 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import Hero from './Hero'
 
 function App() {
   // const [count, setCount] = useState(0)
-
+  
   return (
-    <>
-      
-      <div className="navbar">
-        <ul>
-          <li>Logo</li>
-          <li>Home</li>
-          <li>About Me</li>
-          <li>Resume.pdf</li>
-          <li>Portfolio</li>
-          <li>Contact</li>
-        </ul>
-      </div>
+    <div>
       <body>
-        <header>
-          <h3>Hi, I'm</h3>        
-          <h1>JARVIS TAYLOR</h1>
-          <h2>Front End Web Developer</h2>
-        </header>
+          
+        <div className='navbar'>
+          <a href='#' className='hyperlink'>Home</a>
+          <a href='#' className='hyperlink'>About Me</a>
+          <a href='#' className='hyperlink'>Resume.pdf</a>
+          <a href='#' className='hyperlink'>Portfolio</a>
+          <a href='#' className='hyperlink'>Contact</a>        
+        </div>
+        <div className='navlogo'>
+          <img src ='./src/assets/J.svg' className='logo'alt='Logo'></img>
+        </div> 
+       
       </body>
-      
-    </>
+    < Hero/>
+    </div>
   )
 }
 
