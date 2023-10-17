@@ -6,7 +6,7 @@ import Hero from './Hero'
 
 function App() {
   // const [count, setCount] = useState(0)
-  
+  const logoImg = 'src/assets/J.svg'
   return (
     <div>
       <body>
@@ -19,8 +19,8 @@ function App() {
           <a href='#' className='hyperlink'>Contact</a>        
         </div>
         <div className='navlogo'>
-          {/* <img src='./src/assets/J.svg' className='logo'alt='Logo'></img> */}
-          <a href='./' className='logo' alt='Logo'></a>
+          <img src={logoImg} className='logo'alt='Logo'></img>
+          {/* <a href='./' className='logo' alt='Logo'></a> */}
         </div> 
        
       </body>

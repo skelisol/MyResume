@@ -35,7 +35,7 @@ a:hover {
   margin: 0px;
   /* height: 2.5em; */
   box-shadow: 1px 1px 4px 1px #25FA02;
-  background: url(src/assets/J.svg);
+  /* background: url(src/assets/J.svg); */
   height: 50px;
   width: 50px;
   background-size:cover;
