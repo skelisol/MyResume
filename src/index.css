@@ -3,7 +3,7 @@
  
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #000000;
+  /* background-color: #000000; */
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -12,6 +12,9 @@
   -webkit-text-size-adjust: 100%;
 }
 
+body {
+  width: 100vh;
+}
 /* a {
   font-weight: 500;
   color: #646cff;
@@ -21,8 +24,15 @@ a:hover {
   color: #535bf2;
 } */
 
+section {
+  display: inline;
+  background: linear-gradient(#828282, #272727, #090909);
+
+}
+
 .navlogo {
   top: 0;
+  left: 10px;
   position: fixed;  
   display: flex;
   flex-direction: row;
@@ -45,16 +55,16 @@ a:hover {
 
 .navbar {
   padding: 0;
-  margin: 0;
-  width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
   top: 0;
+  left: 0;
   position: fixed;  
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content:right;
 }
-
-
 
 .hyperlink {
   color: #25FA02;
@@ -63,18 +73,9 @@ a:hover {
   text-align: center;
 }
 
+/* Hero section */
 
 
-main {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-  flex-direction: column;
-  /* align-items: center; */
-  justify-content: center;
-}
 
 h1 {
   font-size: 4.2em;
@@ -93,8 +94,12 @@ h2 {
   text-transform: uppercase;
 }
 
-h3 {
+h1 > span {
   margin-bottom: 1em;
+  font-size: .4em;
+  color: #ffffff;
+  text-shadow: 0 0 5px #ffffff;
+  font-family: 'Odibee Sans', cursive;
 }
 
 /* button {
