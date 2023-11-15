@@ -1,14 +1,16 @@
-import React from 'react'
-import '../PrevPort.css'
+import React from 'react';
+import styles from './PrevPort.module.css';
 
 
 function PrevPort() {
     return(
-        <section className='hero'>
-            <div className='main'>
-                <h2>Portfolio</h2>
-            </div>
-        </section>
+        <div className={styles.PrevPort}>
+            <section className='hero'>
+                <div className='main'>
+                    <h2>Portfolio</h2>
+                </div>
+            </section>
+        </div>
     )
 }
 

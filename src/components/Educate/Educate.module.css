@@ -1,0 +1,46 @@
+
+
+  /* div {
+    margin: 0;
+    display: flex;
+    place-items: center;
+    min-width: 320px;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+  } */
+
+  .main > h2 {
+    font-size: 4rem;
+  }
+
+  .eduCards {    
+    width: 350px;
+    height: 500px;
+    /* display: flex; */
+    /* align-items: end; */
+    background-color: green;
+  }
+
+  .cardTitle {
+    color: #25FA02;
+    font-size: 2em;
+    text-shadow: 0 0 5px #25FA02;
+    text-transform: uppercase;
+  }
+
+  
+
+  .card {
+    height: 100%;
+    width: 100%;
+    /* background-color: black; */
+    margin-bottom: 10px;
+  }
+
+  .cardFront, .cardBack {
+    height: 100%;
+    width: 100%;
+  }

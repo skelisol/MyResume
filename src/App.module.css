@@ -1,49 +1,50 @@
-#root {
+/* #root {
   max-width: 100vw;
   margin: 0 auto;
-  /* padding: 2rem; */
-  /* text-align: center; */
   box-sizing: border-box;
   font-family:'Odibee Sans', cursive;
 
+} */
+@import "./cssvars.css";
+
+
+.App {
+  /* background: var(--bg-color); */
+  width: 100vw;
+  height: 100%;
+  /* height: 100vh; */
+  /* color: white; */
 }
 
-div {
+
+/* div {
   line-height: 1.5;
   margin: 0;
-}
+} */
 
-.hero {
-  /* max-width: 50rem; */
+/* .hero {
   margin-left: auto;
   margin-right: auto;
   font-size: 2rem;
-  --skew-angle: -5deg;
 }
 .main > p {
   font-family:'Odibee Sans', cursive;
-  /* font-size: 1rem; */
-  /* transform: skewY(var(--skew-angle)); */
 }
 
 .main {
   margin: 0;
-  padding-left: 30px;
+  padding-left: 100px;
   display: flex;
-  place-items: left;
   min-width: 100vw;
   min-height: 100vh;
   flex-direction: column;
-  /* align-items: center; */
   justify-content: center;
   padding-bottom: 0;
-  background: radial-gradient(circle at 100%, #090909 0%, #272727 50%, #828282 100%);
-  /* width: 100vh; */
-}
+} */
 
-button {
+/* button {
   width: fit-content;
-}
+} */
 /* .logo {
   height: 6em;
   padding: 1.5em;

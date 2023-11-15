@@ -1,20 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&family=Ruthie&display=swap');
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
  
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  /* background-color: #000000; */
-
+  background-color: #000000;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+  /* overflow-x: hidden; */
+  display: flex;
+  width: 100vw;
 }
 
-body {
-  width: 100vh;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Odibee Sans', sans-serif;
 }
+
 /* a {
   font-weight: 500;
   color: #646cff;
@@ -24,102 +32,13 @@ a:hover {
   color: #535bf2;
 } */
 
-section {
-  display: inline;
-  background: linear-gradient(#828282, #272727, #090909);
 
-}
-
-.navlogo {
-  top: 0;
-  left: 10px;
-  position: fixed;  
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-}
-
-.logo {
-  text-decoration: none;
-  padding: 0px;
-  margin: 0px;
-  height: 2.5em;
-  /* width: 2.5em; */
-  box-shadow: 1px 1px 4px 1px #25FA02;
-  /* background: url(./assets/J.svg); */
-  /* height: 50px; */
-  /* width: 50px; */
-  background-size:cover;
-  background-repeat: no-repeat;
-}
-
-.navbar {
-  padding: 0;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  top: 0;
-  left: 0;
-  position: fixed;  
-  display: flex;
-  flex-direction: row;
-  justify-content:right;
-}
-
-.hyperlink {
-  color: #25FA02;
-  text-decoration: none;
-  padding: 10px;
-  text-align: center;
-}
 
 /* Hero section */
 
 
 
-h1 {
-  font-size: 4.2em;
-  line-height: 1.1;
-  color: #25FA02;
-  text-shadow: 0 0 10px #68f752;
-  font-family: 'Odibee Sans', cursive;
-  margin: 0;
-}
 
-h2 {
-  margin: 0;
-  font-size: 2em;
-  text-shadow: 0 0 5px #ffffff;
-  font-family: 'Odibee Sans', cursive; 
-  text-transform: uppercase;
-}
-
-h1 > span {
-  margin-bottom: 1em;
-  font-size: .4em;
-  color: #ffffff;
-  text-shadow: 0 0 5px #ffffff;
-  font-family: 'Odibee Sans', cursive;
-}
-
-/* button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-} */
 
 @media (prefers-color-scheme: light) {
   :root {

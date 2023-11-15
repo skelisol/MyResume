@@ -1,0 +1,132 @@
+@import "../../cssvars.css";
+
+.navbar {
+  /* background: var(--bg-color); */
+  background: #000; /* linear-gradient(#090909, #272727, #828282); */
+  /* width: 100%;
+  height: 100%; */
+  font-family: var(--main-font);
+  position: relative;
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  padding: .5em;
+  /* padding-bottom: .5em; */
+  z-index: 2;
+  border-bottom: solid 4px #090909;
+  /* margin-right: 5%; */
+  /* padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  top: 0;
+  left: 0;
+    
+  flex-direction: row;
+   */
+}
+
+.logo {
+  /* text-decoration: none; */
+  /* padding: 0px;
+  margin: 0px; */
+  /* padding-bottom: 10px; */
+  /* position: fixed;   */
+  display: flex;
+  /* justify-content: right; */
+  /* align-items: right; */
+  height: 2.5em;
+  box-shadow: 1px 1px 4px 1px var(--sec-color);
+  background-size:cover;
+  background-repeat: no-repeat;
+  
+  margin-left: 5%;
+}
+
+/* section {
+  display: inline;
+  background: linear-gradient(#828282, #272727, #090909);
+
+} */
+
+.navMenu {
+  display: flex;
+  justify-content: right;
+  width: 100vw;
+  margin-right: 5%;
+
+}
+
+.navItems {
+  display: flex;
+  gap: 2em;
+  list-style: none;
+  align-items: center;
+}
+
+.navItems a {
+  color: var(--main-color);
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: var(--shadow);
+  font-size: var(--subHead-font);
+}
+
+li:nth-child(5) a {
+  color: var(--action-color);
+  text-shadow: 0 0 20px var(--sec-color);
+}
+
+.navBtn {
+  display: none;
+}
+
+@media screen and (max-width: 830px) {
+  
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    background: none;
+  }
+
+  .navMenu {
+    position: absolute;
+    margin-right: 10em;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1em;
+    z-index: 3;
+  }
+
+  .navBtn {
+    display: flex;
+    cursor: pointer;
+    width: 3em;
+    margin-right: 1.5%;
+  }
+
+  .navItems {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    border-radius: 5%;
+    /* background: var(--bg-color); */
+    background: linear-gradient(#090909, #272727, #828282);
+    padding: 1em 1em;
+    margin-right: 1%;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+  }
+
+  li:nth-child(5) a {
+    /* color: var(--action-color); */
+    text-shadow: 0 0 10px var(--sec-color);
+  }
+
+  .menuOpen {
+    display: flex;
+    z-index: 1;
+    margin-right: 1.5%;
+
+  }
+}

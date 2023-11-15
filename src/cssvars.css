@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&family=Ruthie&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
+
+:root {
+    /* Colors */
+    --bg-color: radial-gradient(circle at top left, #090909 0%, #272727 50%, #25FA02 100%); /*100%, #090909 0%, #272727 50%, #25FA02 100%)*/
+    /* radial-gradient(circle at 100%, #25FA02 0%, #272727 50%, #090909 100%);  */
+    --main-color: #fff;
+    --sec-color: #25FA02;
+    --action-color: #0C00F1;
+    --shadow: 0 0 10px var(--main-color);
+
+    /* Shadows */
+    --boxShadow: 1px 1px 4px 1px var(--sec-color);
+    
+    /* Fonts */
+    --main-font: 'Odibee Sans', cursive;
+    --spec-font: 'Comfortaa', Sans-Serif;
+    --head-font: 4em;
+    --subHead-font: 1.5em;
+
+}

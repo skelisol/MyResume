@@ -1,14 +1,16 @@
-import React from 'react'
-import '../About.css'
+import React from 'react';
+import styles from './About.module.css';
 
 
 function About() {
     return(
-        <section className='hero'>
-            <div className='main'>
-                <h2>Ok, but who is Jarvis?</h2>
-            </div>
-        </section>
+        <div className={styles.About}>
+            <section className='hero'>
+                <div className='main'>
+                    <h2>Ok, but who is Jarvis?</h2>
+                </div>
+            </section>
+        </div>
     )
 }
 

@@ -1,14 +1,16 @@
 import React from 'react'
-import '../Skills.css'
+import styles from './Skills.module.css';
 
 
 function Skills() {
     return(
-        <section className='hero'>
-            <div className='main'>
-                <h2>Skills & Proficiencies</h2>
-            </div>
-        </section>
+        <div className={styles.Skills}>
+            <section className='hero'>
+                <div className='main'>
+                    <h2>Skills & Proficiencies</h2>
+                </div>
+            </section>
+        </div>
     )
 }
 

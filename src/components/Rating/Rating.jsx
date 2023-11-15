@@ -1,14 +1,16 @@
 import React from 'react'
-import '../Rating.css'
+import styles from './Rating.module.css';
 
 
 function Rating() {
     return(
-        <section className='hero'>
-            <div className='main'>
-                <h2>Rate Me</h2>
-            </div>
-        </section>
+        <div className={styles.Rating}>
+            <section className='hero'>
+                <div className='main'>
+                    <h2>Rate Me</h2>
+                </div>
+            </section>
+        </div>
     )
 }
 
