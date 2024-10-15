@@ -4,7 +4,9 @@
 
 :root {
     /* Colors */
-    --bg-color: radial-gradient(circle at top left, #090909 0%, #272727 50%, #25FA02 100%); /*100%, #090909 0%, #272727 50%, #25FA02 100%)*/
+    --bg-color: radial-gradient(circle at top left, #828282 0%, #272727 35%, #25FA02 100%);
+    /* --bg-color: radial-gradient(circle at top left, #828282 0%, #272727 50%, #25FA02 100%); */
+
     /* radial-gradient(circle at 100%, #25FA02 0%, #272727 50%, #090909 100%);  */
     --main-color: #fff;
     --sec-color: #25FA02;
@@ -13,11 +15,23 @@
 
     /* Shadows */
     --boxShadow: 1px 1px 4px 1px var(--sec-color);
+    --boxShadow2: 1px 1px 4px 1px var(--action-color);
+    --btnShadow: 1px 1px 10px 1px var(--action-color);
+
     
     /* Fonts */
     --main-font: 'Odibee Sans', cursive;
     --spec-font: 'Comfortaa', Sans-Serif;
+    --awe-font: 'FontAwesome';
     --head-font: 4em;
     --subHead-font: 1.5em;
+
+    /* Font Size */
+    --fs-1dot5: 1.5rem; /*the same as 1em*/
+    --fs-2dot0: 2rem;
+    --fs-2dot25: 2.25rem;
+    --fs-2dot5: 2.5rem;
+
+    --fs-9dot0: 9rem;
 
 }

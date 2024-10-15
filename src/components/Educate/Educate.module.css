@@ -1,46 +1,189 @@
+.educate {
+  height: 100lvh;
+  /* width: 100lvw; */
+  width: 100%;
+  position: relative;  
+  top: 0;
+  left: 0;
+  z-index: 1;
+  padding-left: 5%;
+  padding-right: 5%;
+  display: flex;
+  font-size: 1.5em;
+  /* border: 2px solid pink; */
+}
+
+.title {
+  /* border: solid 2px pink; */
+  margin: 0;
+  align-self: flex-start;
+  margin-top: 5%;
+  font-size: 3em;
+  text-decoration: underline;
+  color: var(--main-color);
+  text-shadow: 0 0 10px var(--sec-color);
+  font-family: 'Odibee Sans', cursive; 
+}
+
+/* Body */
+.main {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  height: 80%;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 2px solid green; */
+
+}
+
+/* Container */
+.eduCards {
+  /* border: 2px solid blue; */
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  /* align-items: center; */
+  /* justify-items: space-around; */
+  /* justify-content: center; */
+
+  width: 350px; 
+  height: 400px;
+  perspective: 800px;
+}
+
+.cardTitle {
+  color: #25FA02;
+  font-size: 2rem;
+  text-shadow: 0 0 5px #25FA02;
+  text-transform: uppercase;
+}
+
+/* Card */ 
+.card {
+  /* border: 2px solid green; */
+  /* height: 50lvh; */
+  /* width: 25lvw; */
+  width: 100%;
+  height: 100%;
+  margin-bottom: 10px;
+  display: flex;
+  /* flex-direction: column; */
+  /* align-items: center; */
+  /* justify-content: space-between; */
 
 
-  /* div {
-    margin: 0;
-    display: flex;
-    place-items: center;
-    min-width: 320px;
-    min-height: 100vh;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    
-  } */
+  position: relative;
+  transition-timing-function: ease-in;
+  transition: transform 1500ms;
+  transform-style: preserve-3d;
+}
+.cardFront, .cardBack {
+  /* border: 2px solid pink; */
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: hsla(0, 0%, 17%, 0.7);
+  backdrop-filter: blur(10px) brightness(150%);
+  border-radius: 10px;
+  border: ridge 2px #828282;
+  box-shadow: 1px 1px 10px 1px #828282;
+  backface-visibility: hidden;
+}
 
-  .main > h2 {
-    font-size: 4rem;
-  }
+/* Front */
+.cardFront {
+  /* align-items: center; */
+  /* justify-content: center; */
+  justify-content: space-evenly;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 5%;
+}
 
-  .eduCards {    
-    width: 350px;
-    height: 500px;
-    /* display: flex; */
-    /* align-items: end; */
-    background-color: green;
-  }
+.cardFront :nth-child(1) {
+  font-family: var(--spec-font);
+  /* m  argin-bottom: 1rem; */
+}
 
-  .cardTitle {
-    color: #25FA02;
-    font-size: 2em;
-    text-shadow: 0 0 5px #25FA02;
-    text-transform: uppercase;
-  }
+.cardFront :nth-child(3) {
+  font-family: var(--spec-font);
+  margin-bottom: 1rem;
+  /* text-align: center; */
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  justify-self: flex-end;
+  /* margin-top: 8em; */
+}
 
-  
+.cardFront > h5 {
+  text-align: center;
+  align-self: center;
+  /* padding: 3px; */
+  /* border: solid 2px white; */
+  border-radius: 8%;
+  width: fit-content;
+  opacity: .5;
+}
 
-  .card {
-    height: 100%;
-    width: 100%;
-    /* background-color: black; */
-    margin-bottom: 10px;
-  }
+.eduCards:hover > .card {
+  cursor: pointer;
+  transform: rotateY(180deg);
+}
 
-  .cardFront, .cardBack {
-    height: 100%;
-    width: 100%;
-  }
+/* Back */
+.cardBack {
+  display: flex;
+  flex-direction: row;
+  padding: 5%;
+  /* text-wrap: wrap; */
+  text-align: left;
+
+  /* display: none; */
+  transform: rotateY(180deg);
+}
+
+.cardBack ul {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+  line-height: 100%;
+  line-height: 1.1;
+  justify-content: space-evenly;
+  /* gap: 3%; */
+  /* height: fit-content; */   
+}
+
+.cardBack li {
+  font-family: var(--spec-font);
+  font-size: 1rem;
+}
+
+.cardBack ul a {
+  text-decoration: none;
+  color: var(--sec-color);
+  /* border: solid 2px var(--action-color); */
+  padding: 0 1%; 
+  background-color: transparent;
+  backdrop-filter: blur(10px) brightness(150%);
+
+  /* background-color: #828282; */
+  border-radius: 5px;
+  border: ridge 2px var(--action-color);
+  /* box-shadow: var(--boxShadow2); */
+  font-size: var(--fs-1dot5);
+  transition: .5s;
+}
+
+.cardBack ul a:hover {
+  border: ridge 2px var(--action-color);
+  color: var(--main-color);
+  background: hsla(253, 100%, 48%, 0.3);
+  backdrop-filter: blur(10px) brightness(150%);
+  box-shadow: 1px 1px 10px 1px var(--action-color);
+  /* transform: translateY(-3px); */
+}

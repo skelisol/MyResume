@@ -1,64 +1,92 @@
 @import "../../cssvars.css";
+/* @import "../../utility"; */
 
 
-.Hero {
-  width: 100vw;
-  height: 100vh;
-  position: relative;
+
+.hero {
+  height: 100lvh;
+  /* width: 100lvw; */
+  width: 100%;
+  position: relative;  
+  top: 0;
+  left: 0;
+  z-index: 1;
+  padding-left: 5%;
+  padding-right: 5%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   /* margin-top: 1em; */
-  z-index: 1;
-  padding-left: 10%;
-  padding-right: 10%;
-  background: var(--bg-color);
-  line-height: 3em;
+  /* line-height: 3em; */
   font-size: 1.5em;
+  /* border: solid pink 2px; */
+  scroll-snap-type: y proximity;
 }
 
 .main {
   /* margin: 0; */
+  height: 50%;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  /* align-items: flex-start; */
   /* padding-left: 100px; */
   /* min-width: 100vw; */
   /* min-height: 100vh; */
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  /* border: solid pink 3px; */
+  /* padding-right: 5%; */
+  white-space: nowrap;
+
 }
 
 .heading {
-  font-size: 6em;
+  display: block;
+  height: 120px;
+  font-size: var(--fs-9dot0);
   color: var(--sec-color);
   text-shadow: 0 0 15px #68f752;
   font-family: 'Odibee Sans', cursive;
   margin: 0;
+  padding: 0;
   letter-spacing: -1px;
   text-transform: uppercase;
 }
+
+
 
 .title {
   margin: 0;
   font-size: 3em;
   color: var(--main-color);
-  text-shadow: 0 0 10px var(--main-color);
-  font-family: 'Odibee Sans', cursive; 
-  text-transform: uppercase;
+  text-shadow: 0 0 10px var(--sec-color);
+  font-family: 'Odibee Sans', cursive;
+  text-decoration: underline;
+  /* text-transform: uppercase; */
 }
 
-.heading > span {
-  margin-bottom: 1em;
-  font-size: 3rem;
+.grouping {
+  /* border: pink solid 2px; */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  /* justify-content: flex-start; */
+}
+
+.span {
+  margin-bottom: .55rem;
+  margin-right: .55rem;
+  font-size: var(--fs-2dot25);
   color: var(--main-color);
   text-shadow: 0 0 5px var(--main-color);
   font-family: 'Odibee Sans', cursive;
   text-transform: none;
   letter-spacing: 0;
+  text-shadow: none;  
 }
 
 .description {
-  font-size: 1.5em;
+  font-size: var(--fs-2dot5);
   /* margin-bottom: 1.5rem; */
 }
 
@@ -66,24 +94,152 @@
   font-family: 'Ruthie';
   text-shadow: 0 0 10px var(--main-color);
   font-size: 3rem;
+  opacity: 50%;
+  z-index: -99;
+  /* border: solid 2px pink; */
+  /* Insert a transition here to mimic keys being typed */
 }
 
 .btnContact {
-  border-radius: 8px;
-  border: 1px solid transparent;
+  /* border-radius: 8px; */
+  /* border: 1px solid transparent; */
+  border: none;
   /* padding: 0.6em 1.2em; */
   font-size: 1.5em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background: none;
+  /* background-color: #1a1a1a; */
   cursor: pointer;
-  transition: border-color 0.25s;
-  width: 150px;
+  transition: box-shadow 0.25s;
+  /* width: 150px; */
+  /* height: auto; */
+  /* padding: 0; */
+  /* background-image: url("../../assets/nav/contactBtn2.svg"); */
+  
 }
-button:hover {
-  border-color: #646cff;
+
+.btnContact2 {
+  background-image: url("../../assets/nav/contactBtn.svg"); 
+  background: cover;
+  background-repeat: none;
+  border: none;
+  /* cursor: pointer; */
+  transition: box-shadow 0.25s;
+  width: 118px;
+  height: 55px;
 }
-button:focus,
+
+
+.btnContact2:hover {
+  /* background-image: url("../../assets/nav/contactBtn.svg"); */
+  box-shadow: 1px 1px 4px 1px var(--action-color);
+}
+
+
+.heroImage {  
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  width: 45%;
+  /* height: 30rem; */
+  /* align-items: flex-end; */
+  /* justify-content: flex-end; */
+  /* flex-direction: row; */
+  /* align-self:safe; */
+  /* border-radius: 100px; */
+  filter: blur(1px) opacity(.4) brightness(100%);
+  z-index: -1;
+  /* border: solid pink 2px; */
+  white-space: nowrap;
+  border-radius: 20px;
+  border: solid 2px #828282;
+  box-shadow: 1px 1px 10px 1px #828282;
+}
+
+.side {
+  display: flex;
+  width: 50%;
+  height: 45%;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+
+}
+
+.rateCards {
+  position: relative;
+  width: 350px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  /* align-items: center; */
+  justify-content: space-evenly;
+  /* align-items: center; */
+  /* align-content: space-around; */
+  padding: 5px;
+  perspective: 800px;
+  background: hsla(0, 0%, 17%, 0.7);
+  backdrop-filter: blur(10px) brightness(150%);
+  border-radius: 10px;
+  border: ridge 2px #828282;
+  box-shadow: 1px 1px 10px 1px #828282;
+}
+
+.cardFront {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  gap: .5rem;
+  /* align-content: center; */
+  text-align: center;
+  
+}
+
+.starWidget > input {
+    display: none;
+}
+
+.starWidget > label:before {
+  content: '\f005';    
+  font-family: var(--awe-font);
+  font-size: var(--fs-1dot5);
+  width: 50px;
+  height: 50px;
+}
+
+/* button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+} */
+
+@media screen and (max-width: 975px) {
+  .hero {
+    /* flex-direction: column-reverse; */
+    flex-direction: column-reverse;
+    line-height: 5rem;
+    align-items: center;
+  }
+
+  .main {
+    /* align-items: flex-start; */
+    /* align-items: center; */
+    white-space: wrap;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .btnContact2 {
+    align-self: center;
+  }
+
+  .heroImage {
+    /* margin-top: 3em;
+    height: 100vh; */
+  }
+
 }

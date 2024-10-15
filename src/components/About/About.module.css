@@ -1,11 +1,95 @@
-/* 
-  div {
-    margin: 0;
-    display: flex;
-    place-items: center;
-    min-width: 320px;
-    min-height: 100vh;
-    flex-direction: column;
-    justify-content: center;
-    
-  } */
+
+.about {
+  /* margin: 0; */
+  display: flex;
+  position: relative;
+  height: 100lvh;
+  /* width: 100lvw; */
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  padding-left: 5%;
+  padding-right: 5%;
+  /* line-height: 3em; */
+  font-size: 1.5em;
+  /* background: var(--bg-color); */
+  /* place-items: center; */
+  /* min-width: 320px; */
+  /* min-height: 100vh; */
+  /* flex-direction: column;
+  align-items: center;
+  justify-content: flex-end; */
+  /* border: solid 2px pink; */
+  scroll-snap-align: start;
+  
+}
+
+.heading {
+  /* border: solid 2px pink; */
+
+}
+.title {
+  margin: 0;
+  margin-top: 5%;
+  font-size: 3em;
+  color: var(--main-color);
+  text-shadow: 0 0 10px var(--sec-color);
+  font-family: 'Odibee Sans', cursive; 
+  text-decoration: underline;
+  /* text-transform: uppercase; */
+  
+}
+
+.aboutImg {
+  display: flex;
+  position: absolute;
+  /* flex-direction: column; */
+  /* align-items: flex-start; */
+  width: 30%;
+  /* filter: blur(1px) opacity(.4) brightness(100%); */
+  /* border-radius: 100px; */
+  z-index: 1;
+  /* border: solid pink 3px; */
+  white-space: nowrap;
+  margin-top: 2em;
+}
+
+.main {
+  display: flex;
+  flex-direction: row-reverse;
+  /* border: solid 2px pink; */
+
+}
+
+.aboutme {
+  font-size: 12vw + 1rem;
+  font-family: var(--spec-font);
+  text-wrap: wrap;
+  text-align: justify;
+  /* display: flex; */
+  width: 50%;
+  /* width: 50lvw; */
+  background: hsla(0, 0%, 17%, 0.5);
+  backdrop-filter: blur(10px) brightness(150%);
+  /* margin: 2%; */
+  padding: 1%;
+  border-radius: 20px;
+  border: ridge 2px #828282;
+  box-shadow: 1px 1px 10px 1px #828282;
+}
+
+.aboutme span {
+  /* font-size: 1em; */
+  font-family: var(--spec-font);
+  /* content: " "; */
+  display: block;
+  text-align: center;
+  text-shadow: 0 0 20px var(--main-color);
+}
+
+.aboutme br {
+  content: " ";
+  display: block;
+  padding: 1% 0;
+}

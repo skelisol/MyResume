@@ -3,13 +3,15 @@ import styles from './Navbar.module.css'
 import {getImageURL} from "../../utility"
 
 const logoImg = getImageURL("nav/J.svg"); //'../src/assets/J.svg';
+const resume = new URL('https://drive.google.com/file/d/1YCyIthigizQwWrSWwTjAfZs3HHqAH6Rg/view?usp=drive_link');
 
 export const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
     return (
-        <nav className={styles.navbar}>
+        <div className={styles.navbar}>
             {/* <div className={styles.navlogo}> */}
                 <img src={logoImg} className={styles.logo} alt='Logo'></img>
+                <h2 className={styles.navTitle}>Jarvis Taylor's Digital Resume </h2>
             {/* </div> */}
             <div className={styles.navMenu}>
                 <img className={styles.navBtn} src={
@@ -31,17 +33,19 @@ export const Navbar = () => {
                         <a href='#about'>About Me</a>
                     </li>
                     <li>
-                        <a href='#'>Resume.pdf</a>
+                        <a href={resume} target='_blank'>Resume.pdf</a>
                     </li>
                     <li>
                         <a href='#portfolio'>Portfolio</a>
                     </li>
                     <li>
-                        <a href='#contact'>Contact</a> 
+                        <a href='#contact'>
+                            <div className={styles.contactBtn}/>
+                        </a>
                     </li>
                 </ul>
             </div>
 
-      </nav>
+      </div>
     )
 };

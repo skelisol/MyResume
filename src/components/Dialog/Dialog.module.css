@@ -1,0 +1,60 @@
+.exitPopup {
+  /* display: flex; */
+  flex-direction: row;
+  /* position: sticky; */
+  top: 35%;
+  left: 35%;
+  border-radius: 5px;
+  height: 10rem;
+  width: 40rem;
+  background: hsla(0, 0%, 17%, 0.5);
+  backdrop-filter: blur(10px) brightness(150%);
+  border: solid 2px var(--action-color);
+}
+
+.exitPopup::backdrop {
+  backdrop-filter: blur(4px);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+.title {
+  color: var(--sec-color);
+    font-size: var(--fs-2dot0);
+    text-shadow: 0 0 10px var(--action-color);
+    font-family: 'Odibee Sans', cursive;
+    margin-top: 1.5rem;
+    align-self: center;
+    text-align: center;
+    text-wrap: wrap;
+    width: 75%;
+  }
+
+.btnDialogDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2%;
+  margin-top: 1.5rem;
+
+}
+
+.btnDialogResp {
+    width: 25%;
+    font-size: 1rem;
+    color: var(--sec-color);
+    font-family: var(--spec-font);
+    background: hsla(0, 0%, 17%, 0.5);
+    backdrop-filter: blur(10px) brightness(150%);
+    border-radius: 5px;
+    border: solid 2px var(--action-color);
+    transition: .5s;
+  }
+
+  .btnDialogResp:hover {
+    cursor: pointer;
+    box-shadow: 1px 1px 10px 1px var(--action-color);
+    transform: translateY(-3px);
+  }

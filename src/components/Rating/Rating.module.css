@@ -1,0 +1,164 @@
+.rating {
+    height: 100lvh;
+    /* width: 100lvw; */
+    width: 100%;
+    position: relative;  
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    font-size: 1.5em;
+    /* border: 2px solid pink; */
+    /* flex-direction: column; */
+    /* align-content: flex-end; */
+    /* justify-content: space-between; */
+  }
+
+  .title {
+    /* border: solid 2px pink; */
+    margin: 0;
+    /* flex-direction: column-reverse; */
+    /* align-items: flex-end; */
+    /* align-content: flex-end; */
+    /* justify-content: flex-start; */
+    align-self: flex-start;
+    margin-top: 5%;
+    font-size: 3em;
+    color: var(--main-color);
+    text-shadow: 0 0 10px var(--sec-color);
+    font-family: 'Odibee Sans', cursive; 
+    text-decoration: underline;
+    /* font-family: var(--spec-font); */
+
+  }
+  
+  .main {
+    position: absolute;
+    top: 15%;
+    left: 25%;
+    height: 80%;
+    /* border: solid red 2px; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    /* align-content: center; */
+    /* align-self: center; */
+    width: 50lvw;
+    display: flex;
+    gap: .5em;
+    
+  }
+
+  .description {
+    display: flex;
+    flex-direction: column;
+    /* border: solid red 2px; */
+    font-family: var(--spec-font);
+    text-align: center;
+    margin: 10% 0;
+
+  }
+
+  .starRatings {
+    display: flex;
+    /* background-color: */
+    background: hsla(0, 0%, 17%, 0.5);
+    backdrop-filter: blur(10px) brightness(150%);
+    /* border-radius: 5px; */
+    border: inset 2px var(--sec-color);
+    
+  }
+ 
+  .starWidget > input {
+    display: none;
+  }
+
+  .starWidget > label {
+    color: #828282;
+    
+    padding: .5rem;
+    float: right;
+    transition: all .2s ease;
+  }
+
+  .starWidget input:not(:checked) ~ label:hover, input:not(:checked) ~ label:hover ~ label {
+    color: var(--sec-color);
+    
+  }
+
+  .starWidget input:checked ~ label {
+    color: var(--sec-color);
+    text-shadow: 0 0 20px var(--sec-color);
+
+  }
+
+  .starWidget input#star5:checked ~ label {
+    color: var(--action-color);
+    text-shadow: 0 0 20px var(--action-color);
+  }
+
+  .starWidget > label:before {
+    content: '\f005';    
+    font-family: var(--awe-font);
+    font-size: var(--fs-1dot5);
+    /* display: inline-block; */
+    width: 50px;
+    height: 50px;
+    
+    /* &star;
+&star;
+&bigstar; &#9734;
+&#9733;
+*/
+  }
+
+  
+  .labelMain {
+    font-size: 1em;
+    color: var(--sec-color);
+    font-family: var(--spec-font);
+    width: 50%;
+    text-align: center;
+
+  }
+  
+  .label {
+    font-size: 1em;
+    color: var(--sec-color);
+    font-family: var(--spec-font);
+    width: 50%;
+    border-color: var(--sec-color);
+  }
+  
+  
+  .checkbox {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .boxes {
+    font-family: var(--spec-font);
+    font-size: var(--fs-1dot5);
+    padding-right: 1.5rem;
+    /* issues with screen sizing here */
+  }
+
+  .btnSend {
+    width: 25%;
+    font-size: var(--fs-2dot0);
+    color: var(--sec-color);
+    /* font-family: var(--spec-font); */
+    background: hsla(0, 0%, 17%, 0.5);
+    backdrop-filter: blur(10px) brightness(150%);
+    border-radius: 5px;
+    border: inset 2px var(--action-color);
+    transition: .5s;
+  }
+
+  .btnSend:hover {
+    cursor: pointer;
+    box-shadow: 1px 1px 10px 1px var(--action-color);
+    transform: translateY(-3px);
+  }

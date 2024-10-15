@@ -1,0 +1,56 @@
+.focus {
+    height: 100lvh;
+    /* width: 100lvw; */
+    width: 100%;
+    position: relative;  
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    font-size: 1.5em;
+    /* border: 2px solid pink; */
+    flex-direction: column;
+    /* align-content: flex-end; */
+    /* justify-content: space-between; */
+  }
+
+  .title {
+    /* border: solid 2px pink; */
+    margin: 0;
+    /* flex-direction: column-reverse; */
+    /* align-items: flex-end; */
+    /* align-content: flex-end; */
+    /* justify-content: flex-start; */
+    align-self: flex-end;
+    margin-top: 5%;
+    font-size: 3em;
+    color: var(--main-color);
+    text-shadow: 0 0 10px var(--sec-color);
+    font-family: 'Odibee Sans', cursive; 
+    text-decoration: underline;
+  }
+
+  .main {
+    position: relative;
+    display: flex;
+    align-self: flex-end;
+    align-items: center;
+    /* justify-content: flex-end;     */
+    height: 60%;
+    width: 60%;
+    /* border: 2px solid green; */
+  }
+
+  .description {
+    /* align-self: flex-end; */
+    font-family: var(--spec-font);
+    text-align: right;
+
+    background: hsla(0, 0%, 17%, 0.7);
+    backdrop-filter: blur(10px) brightness(150%);
+    border-radius: 5px;
+    border: solid 2px #828282;
+    box-shadow: 1px 1px 10px 1px #828282;
+  }

@@ -1,18 +1,18 @@
 import React from 'react';
 import styles from './Focus.module.css';
+import { getImageURL } from '../../utility';
 
-
-function Focus() {
+export const Focus = () => {
     return(
-        <div className={styles.Focus}>
-            <section className='hero'>
-                <div className='main'>
-                    <h2>Career Focus</h2>
-                </div>
-            </section>
-        </div>
+        <section className={styles.focus}>
+            <h2 className={styles.title}>Career Focus</h2>
+
+            <div className={styles.main}>
+                <p className={styles.description}>Growth in the knowledge and understanding of Software and Web Development 
+                with a team that displays high morale, creativity, and expertise for a 
+                company that brings joy and satisfaction to their clients and stakeholders.
+                </p>
+            </div>
+        </section>
     )
 }
-
-// hero = diagonal main = wrapper
-export default Focus
