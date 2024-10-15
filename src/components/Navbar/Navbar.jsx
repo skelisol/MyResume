@@ -3,7 +3,7 @@ import styles from './Navbar.module.css'
 import {getImageURL} from "../../utility"
 
 const logoImg = getImageURL("nav/J.svg"); //'../src/assets/J.svg';
-const resume = new URL('https://drive.google.com/file/d/1YCyIthigizQwWrSWwTjAfZs3HHqAH6Rg/view?usp=drive_link');
+const resume = new URL('https://drive.google.com/file/d/1d7hghB9Dj11jMIP17r_-Dn_LO3TN_mop/view?usp=drive_link');
 
 export const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
